@@ -2,7 +2,7 @@ This is a simple Go module for implementing HTTP basic auth in a server that
 uses the standard Go `http.HandlerFunc` interface.
 
 ```go
-basicAuth, err := httpauth.NewBasicAuthenticator("data/passwd")          
+basicAuth, err := httpauth.NewBasicAuthenticatorFromFile("data/passwd")          
 if err != nil {                                                          
     log.Fatal(err)                                                   
 }               
